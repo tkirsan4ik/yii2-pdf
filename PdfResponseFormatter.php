@@ -73,7 +73,7 @@ class PdfResponseFormatter extends Component implements ResponseFormatterInterfa
 	 */
 	protected function formatPdf($response)
 	{
-		$mpdf = new \mPDF($this->mode,
+		$mpdf = new \Mpdf\Mpdf([$this->mode,
 			$this->format,
 			$this->defaultFontSize,
 			$this->defaultFont,
@@ -84,7 +84,7 @@ class PdfResponseFormatter extends Component implements ResponseFormatterInterfa
 			$this->marginHeader,
 			$this->marginFooter,
 			$this->orientation
-		);
+		]);
 
 		foreach ($this->options as $key => $option) {
 			$mpdf->$key = $option;
