@@ -1,5 +1,5 @@
 {
-	"name": "robregonm/yii2-pdf",
+	"name": "maxinuss/yii2-pdf",
 	"description": "Yii 2 PDF Response Formatter",
 	"keywords": ["yii", "yii2", "pdf", "response", "formatter", "reports", "documents"],
 	"type": "yii2-extension",
